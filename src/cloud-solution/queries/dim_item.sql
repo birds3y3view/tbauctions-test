@@ -1,0 +1,1 @@
+SELECT DISTINCT item,item_id, item_description FROM clean.bids;
