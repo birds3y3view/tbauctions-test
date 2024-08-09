@@ -2,14 +2,14 @@
 
 ## Setup instructions
 
-This container contains a skeleton to also set up schemas and users upon init.
+This container contains a skeleton to also set up schemas upon init.
 
 The following code can be executed in the /src/db directory to spin up a fresh dockerized postgresql db:
 
 ```
-docker build -t xdb .
+docker build -t auctiondb .
 
-docker run --name xdb -p 5432:5432 -e POSTGRES_PASSWORD=thepasswordispassword -d xdb
+docker run --name auctiondb -p 5432:5432 -e POSTGRES_PASSWORD=thepasswordispassword -d auctiondb
 ```
 
 ## Next Steps for improvement
