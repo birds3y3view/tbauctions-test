@@ -1,7 +1,7 @@
 import pandas as pd
 
 def main():
-    df = pd.read_parquet('../../raw/auctions.parquet')
+    df = pd.read_parquet('../raw/auctions.parquet')
 
     # Standardize column names
     df.rename(columns={
@@ -19,7 +19,7 @@ def main():
     # Drop duplicates
     df.drop_duplicates(inplace = True)
 
-    df.to_parquet('../../clean/auctions.parquet')
+    df.to_parquet('../clean/auctions.parquet')
 
 if __name__ == "__main__":
     main()

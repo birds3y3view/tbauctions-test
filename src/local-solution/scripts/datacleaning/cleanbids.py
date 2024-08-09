@@ -1,7 +1,7 @@
 import pandas as pd
 
 def main():
-    df = pd.read_parquet('../../raw/bids.parquet')
+    df = pd.read_parquet('../raw/bids.parquet')
 
     # Standardize column names
     df.rename(columns={
@@ -30,7 +30,7 @@ def main():
     for col in ['bid', 'open_bid', 'price']:
         df[col] = df[col].astype(float)
 
-    df.to_parquet('../../clean/bids.parquet')
+    df.to_parquet('../clean/bids.parquet')
 
 if __name__ == "__main__":
     main()
