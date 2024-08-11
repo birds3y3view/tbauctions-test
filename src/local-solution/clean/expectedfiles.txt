@@ -1,3 +1,0 @@
-auctions.parquet
-bids.parquet
-buyers.parquet

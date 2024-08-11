@@ -1,5 +1,0 @@
-dim_auction.parquet
-dim_buyer.parquet
-dim_item.parquet
-dim_seller.parquet
-fact_bids.parquet
