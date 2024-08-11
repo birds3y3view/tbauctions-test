@@ -13,15 +13,6 @@ def main():
     postgres_str = f'postgresql://{username}:{password}@{ipaddress}:{port}/{dbname}'
     connection = create_engine(postgres_str)
 
-    # for sql in os.listdir('reports'):
-    #     table_name = os.path.splitext(sql)[0]
-
-    #     with open(f'reports/{sql}') as query:
-    #         df = pd.read_sql_query(f"""{query.read()}""", connection)
-    #         plt.figure()
-    #         df['count'].value_counts().plot(kind='hist')
-    #         plt.savefig('out1.pdf')
-
     with open(f'reports/r_auction_type_bids_dist.sql') as query:
         df = pd.read_sql_query(f"""{query.read()}""", connection)
         plt.figure()
