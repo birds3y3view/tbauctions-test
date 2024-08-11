@@ -13,6 +13,8 @@ import datacleaning.dbloadclean as dbloadclean
 import datareporting.convertschema as convertschema
 import datareporting.exportreporting as exportreporting
 
+import datareporting.buildreports as buildreports
+
 # Land Raw Data Steps
 landrawdata.main()
 dbloadraw.main()
@@ -26,3 +28,6 @@ dbloadclean.main()
 # Reporting Data Steps
 convertschema.main()
 exportreporting.main()
+
+# Visualisation Data Steps
+buildreports.main()
