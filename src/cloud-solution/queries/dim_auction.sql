@@ -1,0 +1,1 @@
+SELECT auction_id,auction_type FROM clean.auctions;

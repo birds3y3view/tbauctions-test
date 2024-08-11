@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "resources": [],
+    "parameters": {
+        "accountName": {
+            "type": "string",
+            "value": "tbastorage20240808"
+        },
+        "blobName": {
+            "type": "string",
+            "value": "tbadatalake"
+        },
+        "sourceAccountName": {
+            "type": "string",
+            "value": "tbasourceaccount20240808"
+        },
+        "sourceBlobName": {
+            "type": "string",
+            "value": "tbasource"
+        },
+        "location": {
+            "type": "string",
+            "value": "northeurope"
+        },
+        "adminLogin": {
+            "type": "string",
+            "value": "adminman"
+        },
+        "serverName": {
+            "type": "string",
+            "value": "tbasqlserver20240808"
+        },
+        "sqlDBName": {
+            "type": "string",
+            "value": "tbasqldb20240808"
+        }
+    }
+}
